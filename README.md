@@ -50,9 +50,26 @@ Permite transformar un String a un paquete de datos y enviarlo por el socket
 ### Esta clase representa el login y la primer pantalla de la aplicación vista por el usuario.
 
 Metodos:
-**onCreate()**
+**onCreate()**:
 Inicializa las variables y layouts de la aplicación.
-**logearUsuario()**
-Este metodo se encarga de recibir los Strings de e-mail y contraseña de los usuario, hace una validación con la base de datos en firebase y permite o rechaza el inicio de sesión.
-**onClick()**
+**logearUsuario()**:
+Este metodo se encarga de recibir los Strings de e-mail y contraseña de los usuario, hace una validación con la base de datos en Firebase y permite o rechaza el inicio de sesión.
+**onClick()**:
 Se encarga de enviar la información obtenida en **logearUsuario()** a la base de datos en Firebase.
+
+## RegisterActivity
+### Esta clase representa el registro del usuario para que luego pueda logearse
+
+Metodos:
+**onCreate()**:
+Inicializa las variables y layouts de la aplicación.
+**registrarUsuario()**
+Este metodo se encarga de recibir los Strings de e-mail y contraseña con la que desean registrarse los usuarios, hace la validación con la base de datos en Firebase y permite o rechaza el registro.
+**onClick()**:
+Se encarga de enviar la información obtenida en **registrarUsuario()** a la base de datos en Firebase.
+
+## Resto de Actividades
+### Las actividades que continuan despues del login tienen los mismos metodos.
+
+Metodos:
+**onClick()**: permite al usuario saltar de una aplicación a otra.
