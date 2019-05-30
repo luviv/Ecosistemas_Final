@@ -91,11 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(intent);
                     Toast.makeText(MainActivity.this, "¡Bienvenido! " + usuario.getText(), Toast.LENGTH_LONG).show();
                 } else {
-                    //Si un usuario intenta ingresar una contraseña que no coincide
+                    //Si un usuario intenta registrar una cuenta ya existente
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {
-                        Toast.makeText(MainActivity.this, "La contraseña no coincide, por favor vuelve a intentarlo", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "El usuario ya existe, por favor use otro correo", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(MainActivity.this, "No se pudo iniciar sesión", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "No se pudo registrar al usuario", Toast.LENGTH_LONG).show();
                     }
                 }
 

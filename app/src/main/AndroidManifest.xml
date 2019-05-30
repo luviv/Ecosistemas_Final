@@ -11,11 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SiActivity"></activity>
-        <activity android:name=".LaboratorioActivity" />
-        <activity android:name=".PruebasActivity" />
-        <activity android:name=".MemoriaActivity" />
-        <activity android:name=".TemaActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
@@ -25,6 +20,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Avance" />
+        <activity android:name=".Logro" />
+        <activity android:name=".Tema" />
+        <activity android:name=".pervisual_activity" />
+        <activity android:name=".PruebasActivityPer" />
+        <activity android:name=".PruebasActivity" />
+        <activity android:name=".SiActivity" />
+        <activity android:name=".MemoriaActivity" />
+        <activity android:name=".LaboratorioActivity" />
+        <activity android:name=".LaboratorioPer"></activity>
     </application>
 
 </manifest>

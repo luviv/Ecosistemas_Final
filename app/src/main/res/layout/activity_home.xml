@@ -8,7 +8,6 @@
 
     <ImageButton
         android:id="@+id/btn_tema_home"
-        style="@android:style/Widget.DeviceDefault.ImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/btn_avance_home"
