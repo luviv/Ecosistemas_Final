@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1056448412133",
+    "firebase_url": "https://finalecosistemas-52611.firebaseio.com",
+    "project_id": "finalecosistemas-52611",
+    "storage_bucket": "finalecosistemas-52611.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056448412133:android:4085aed236cc5340",
+        "android_client_info": {
+          "package_name": "luisvivas.com.example.final_ecosistemas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056448412133-ltm96t4i057nhq91pduspfmm451sknu7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "luisvivas.com.example.final_ecosistemas",
+            "certificate_hash": "f6f6ab25859ee9f34d321373dbb3bbd2ddb653fd"
+          }
+        },
+        {
+          "client_id": "1056448412133-p41ecu4bis0qo0oi0tkheg3j7fmntmq0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATU4B-gb4sjBpN644qGzO5GesmJ-H0NtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056448412133-p41ecu4bis0qo0oi0tkheg3j7fmntmq0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

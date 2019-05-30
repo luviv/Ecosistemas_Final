@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo_main"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="PERCEPCIÓN Y COGNICIÓN"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_logo_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_logo_main"
+        android:layout_width="192dp"
+        android:layout_height="193dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_usuario_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_main"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edt_usuario_main"
+        android:layout_width="302dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edt_contra_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_main" />
+
+    <Button
+        android:id="@+id/btn_inicio_main"
+        android:layout_width="299dp"
+        android:layout_height="45dp"
+        android:background="@android:color/holo_purple"
+        android:text="Iniciar Sesión"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_google_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_contra_main" />
+
+    <ImageButton
+        android:id="@+id/btn_google_main"
+        android:layout_width="297.95dp"
+        android:layout_height="53.11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registrarse_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inicio_main"
+        app:srcCompat="@drawable/iniciarsesiongoogle" />
+
+    <Button
+        android:id="@+id/btn_registrarse_main"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_cuenta_main"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_main" />
+
+    <TextView
+        android:id="@+id/tv_cuenta_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta?"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_registrarse_main"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_main" />
+
+    <EditText
+        android:id="@+id/edt_contra_main"
+        android:layout_width="302dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btn_inicio_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_usuario_main" />
+
+</android.support.constraint.ConstraintLayout>

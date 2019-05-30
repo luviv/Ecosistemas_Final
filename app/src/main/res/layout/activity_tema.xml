@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TemaActivity">
+
+    <ImageView
+        android:id="@+id/imv_tema_tema"
+        android:layout_width="409dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_titulo_tema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo" />
+
+    <TextView
+        android:id="@+id/tv_titulo_tema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEMAS DEL CURSO"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/imv_memoria_tema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_tema_tema" />
+
+    <ImageView
+        android:id="@+id/imv_memoria_tema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imv_percepcion_tema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_tema"
+        app:srcCompat="@drawable/memoria" />
+
+    <ImageView
+        android:id="@+id/imv_percepcion_tema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_memoria_tema"
+        app:srcCompat="@drawable/percepcion" />
+</android.support.constraint.ConstraintLayout>

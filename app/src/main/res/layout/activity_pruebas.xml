@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PruebasActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imv_prueba1_pruebas"
+        app:layout_constraintEnd_toEndOf="@+id/imv_prueba1_pruebas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imv_prueba1_pruebas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/realiza" />
+
+    <ImageView
+        android:id="@+id/imv_prueba1_pruebas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imv_prueba2_pruebas"
+        app:layout_constraintEnd_toEndOf="@+id/imv_prueba2_pruebas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imv_prueba2_pruebas"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/prueba1" />
+
+    <ImageView
+        android:id="@+id/imv_prueba2_pruebas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imv_prueba3_pruebas"
+        app:layout_constraintEnd_toEndOf="@+id/imv_prueba3_pruebas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imv_prueba3_pruebas"
+        app:layout_constraintTop_toBottomOf="@+id/imv_prueba1_pruebas"
+        app:srcCompat="@drawable/prueba2" />
+
+    <ImageView
+        android:id="@+id/imv_prueba3_pruebas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv_prueba2_pruebas"
+        app:srcCompat="@drawable/prueba3" />
+
+</android.support.constraint.ConstraintLayout>
