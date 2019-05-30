@@ -45,5 +45,14 @@ permite recibir un paquete de datos y transformarlo a String
 **enviar()**
 Permite transformar un String a un paquete de datos y enviarlo por el socket
 
+# Aplicacion en Android
+## MainActivity
+### Esta clase representa el login y la primer pantalla de la aplicación vista por el usuario.
 
-
+Metodos:
+**onCreate()**
+Inicializa las variables y layouts de la aplicación.
+**logearUsuario()**
+Este metodo se encarga de recibir los Strings de e-mail y contraseña de los usuario, hace una validación con la base de datos en firebase y permite o rechaza el inicio de sesión.
+**onClick()**
+Se encarga de enviar la información obtenida en **logearUsuario()** a la base de datos en Firebase.
